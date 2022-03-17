@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Custom Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>MezaCOS | ID</title>
+
+</head>
+<!-- / Head -->
+
+<?php
+include "./php/konfig.php";
+?>
+
+<body class="">
+
+    <!-- Main Section-->
+    <section
+        class="mt-0 overflow-hidden d-flex justify-content-center align-items-center p-4 bg-light">
+        <!-- Page Content Goes Here -->
+
+        <!-- Login Form-->
+        <div class="col col-md-8 col-lg-6 col-xxl-5">
+            <div class="shadow-xl p-4 p-lg-5 bg-body">
+				<!-- Logo-->
+				<a class="text-decoration-none fw-bold align-items-center text-center fw-bold fs-2" href="./">
+					<div class="mb-3">
+						<div style="color: rgb(21, 3, 85); font-family: 'Poppins', sans-serif;">MezaCOS.</div>
+					</div>
+				</a>
+				<!-- / Logo-->
+                <h1 class="text-center fw-bold mb-5 fs-2"><a class="text-decoration-none" style="color: darkgray;" href="./login">Login</a>&nbsp;|&nbsp;<a class="text-black-50-active text-decoration-none" href="./register">Daftar</a></h1>
+                <form action="./php/submit.php" method="post">
+                    <div class="form-group">
+                      <label class="form-label" for="register-fname">Nama Lengkap</label>
+                      <input type="text" class="form-control" name="nama" id="register-fname" placeholder="nama lengkap" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-username">Buat Username</label>
+                      <input type="text" class="form-control" name="username" id="register-username" placeholder="username baru" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-email">Alamat Email</label>
+                      <input type="email" class="form-control" name="email" id="register-email" placeholder="nama@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-email">No HP</label>
+                      <input type="text" class="form-control" name="hp" id="register-phone" placeholder="nomor telepon aktif" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-password">Buat Password</label>
+                      <input type="password" class="form-control" name="passwd" id="register-password" placeholder="password baru" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-outline-success text-white text-dark-hover d-block w-100 my-4">Buat Akun</button>
+                </form>
+                <span class="text-muted text-center d-block fw-bolder my-4">|</span>
+				<a href="#" class="btn btn-danger d-block mb-2"><i class="ri-google-fill align-bottom"></i> Buat akun
+                    dengan Google</a>
+				<a href="#" class="btn btn-facebook d-block mb-2"><i class="ri-facebook-fill align-bottom"></i> Buat akun
+                    dengan Facebook</a>
+                <p class="d-block text-center text-muted">Sudah punya akun? <a class="text-muted text-orange-hover" href="./login">Klik disini untuk masuk</a></p>
+			
+			</div>
+        </div>
+        <!-- / Login Form-->
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+	<!-- Footer -->
+    <footer class="border-top py-5 mt-4 bg-body">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row">
+                <div>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="https://instagram.com"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="https://facebook.com"><i class="ri-facebook-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="https://twitter.com"><i class="ri-twitter-fill"></i></a></li>
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-dark-hover transition-all"
+                                href="https://wa.me/6283822432242"><i class="ri-whatsapp-fill"></i></a></li> -
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-orange-hover transition-all"
+                                href="#">&nbsp;Tentang Kami</a></li> -
+                        <li class="d-inline-block me-1"><a class="text-decoration-none text-orange-hover transition-all"
+                                href="#">&nbsp;Kerja Sama</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
+                    <p class="medium m-0 text-center text-lg-start">&copy; 2022 Meza Clothing Online Store All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- / Footer-->
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+	
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
